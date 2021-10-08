@@ -12,16 +12,16 @@ if __name__ == "__main__":
     module_2 = "Python_Scripting"
     student_1 = "L12345"
     student_2 = "L54321"
-    STUDENT_NUMBER = 'student_number'
-    GRADE = 'grade'
+    Student_Number = 'student_lnumber'
+    Grade = 'grade'
     students_enrolled = (student_1, student_2)
     modules = [module_1, module_2]
-    grades_module_1 = [{STUDENT_NUMBER: student_1, GRADE: 40}, {STUDENT_NUMBER: student_2, GRADE: 70}]
-    grades_module_2 = [{STUDENT_NUMBER: student_1, GRADE: 69.01}, {STUDENT_NUMBER: student_2, GRADE: 58.2}]
+    grades_module_1 = [{Student_Number: student_1, Grade: 40}, {Student_Number: student_2, Grade: 70}]
+    grades_module_2 = [{Student_Number: student_1, Grade: 69.01}, {Student_Number: student_2, Grade: 58.2}]
     INPUT_MODULE = input("Enter the Module name you want the grade of, (Java_ooprogramming or Python_Scripting)?: ")
     if INPUT_MODULE == modules[0]:
         for i in grades_module_1:
-            print('Student id:' + i[STUDENT_NUMBER] + '\nGrade: ' + str(i[GRADE]))
+            print('Student id:' + i[Student_Number] + '\nGrade: ' + str(i[Grade]))
     elif INPUT_MODULE == modules[1]:
         for i in grades_module_2:
-            print('Student id:' + i[STUDENT_NUMBER] + '\nGrade: ' + str(i[GRADE]))
+            print('Student id:' + i[Student_Number] + '\nGrade: ' + str(i[Grade]))
