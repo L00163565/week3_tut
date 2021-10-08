@@ -12,16 +12,18 @@ if __name__ == "__main__":
     module_2 = "Python_Scripting"
     student_1 = "L12345"
     student_2 = "L54321"
-    Student_Number = 'student_lnumber'
-    Grade = 'grade'
-    students_enrolled = (student_1, student_2)
+    Student_Number = 'L number'
+    Grade = ""
     modules = [module_1, module_2]
+    # list of grades and module
     grades_module_1 = [{Student_Number: student_1, Grade: 40}, {Student_Number: student_2, Grade: 70}]
     grades_module_2 = [{Student_Number: student_1, Grade: 69.01}, {Student_Number: student_2, Grade: 58.2}]
-    INPUT_MODULE = input("Enter the Module name you want the grade of, (Java_ooprogramming or Python_Scripting)?: ")
-    if INPUT_MODULE == modules[0]:
+
+    #check the student number and then grades
+    Module = input("Enter the Module name you want the grade of, (Java_ooprogramming or Python_Scripting)?: ")
+    if Module == modules[0]:
         for i in grades_module_1:
-            print('Student id:' + i[Student_Number] + '\nGrade: ' + str(i[Grade]))
-    elif INPUT_MODULE == modules[1]:
+            print("Gardes of Student id:" + i[Student_Number] + "are : " + str(i[Grade]))
+    elif Module == modules[1]:
         for i in grades_module_2:
-            print('Student id:' + i[Student_Number] + '\nGrade: ' + str(i[Grade]))
+            print("Grades of Student id:" + i[Student_Number] + "are: " + str(i[Grade]))
